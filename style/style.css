@@ -23,17 +23,22 @@ li {
   list-style: none;
 }
 
+section {
+  height: 100vh;
+  padding: 120px;
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #Fff;
+  background: transparent;
 }
 
 header nav {
-  min-height: 10vh;
-  width: 90%;
+  height: 12vh;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,12 +49,61 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 header .navlinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header .navlinks li {
+  margin-left: 30px;
+}
+
+header .navlinks a {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+header .navlinks a:hover {
+  color: #ff0157;
+}
+
+header.sticky {
+  background: #fff;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky nav {
+  height: 8vh;
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header.sticky .navlinks li a {
+  color: #111;
+}
+
+header.sticky .navlinks li a:hover {
+  color: #ff0157;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo span {
+  color: #ff0157;
+  font-weight: 600;
 }
 
 .home {
@@ -80,7 +134,8 @@ header .navlinks {
 }
 
 .home .content p {
-  font-size: 1em;
+  margin-top: .15rem;
+  font-size: 1.05em;
   color: #fff;
 }
 
@@ -102,5 +157,59 @@ header .navlinks {
 .btn:hover {
   letter-spacing: 6px;
   font-size: 1.25em;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row .col-50 {
+  position: relative;
+  width: 48%;
+  margin-right: 50px;
+}
+
+.row .col-50 .imgbx {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.row .col-50 .imgbx img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.row .col-50 .imgbx img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.title-text {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: #111;
+}
+
+.title-text span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 /*# sourceMappingURL=style.css.map */

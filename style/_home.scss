@@ -3,18 +3,62 @@ header{
     top:0;
     left:0;
     width:100%;
-    background:#Fff;
-
+    background:transparent;
+    
     nav{
-        min-height: 10vh;
-        width:90%;
+        height:12vh;
+        width:85%;
         display:flex;
         justify-content: space-between;
         align-items: center;
         margin:auto;
+        transition:0.5s ease;
+        
     }
     .navlinks{
         display:flex;
+        li{
+            margin-left:30px;
+        }
+        a{
+            color:#fff;
+            font-size:1.25em;
+            font-weight: 400;
+
+        &:hover{
+                color:#ff0157;
+            }
+        }
+       
+    }
+}
+header.sticky{
+    background:#fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+ 
+    nav{
+        height: 8vh;
+
+    }
+    .logo{
+        color:#111;
+    }
+    .navlinks li a{
+        color:#111;
+        &:hover{
+            color:#ff0157;
+        }
+    }
+    
+}
+
+.logo{
+    font-size:2em;
+    font-weight: 700;
+    color:#fff;
+    span{
+        color:#ff0157;
+        font-weight:600;  
     }
 }
 .home{
@@ -35,7 +79,8 @@ background-size:cover;
         color:#fff;
     }
     p{
-        font-size:1em;
+        margin-top: .15rem;
+        font-size:1.05em;
         color:#fff;  
     }
     
