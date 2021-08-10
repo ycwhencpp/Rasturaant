@@ -13,6 +13,7 @@ html{
 p{
     font-weight:400;
     color:#111;
+    font-size:1.25em;
 }
 a{
     text-decoration: none;
@@ -21,8 +22,9 @@ li{
     list-style: none;
 }
 section{
-    height:100vh;
+    // height:100vh;
     padding: 120px;
 }
 @import "home";
 @import "about";
+@import "menu";
