@@ -7,10 +7,11 @@
         width:100%;
        
     }
+}
     .content{
         display:flex;
         justify-content: center;
-        flex-direction:row-reverse;
+        flex-direction:row;
         flex-wrap: wrap;
         margin-top:40px;
         .card{
@@ -47,12 +48,14 @@
             color:#111;
            
         }
+        
     }
-    a{
+    a.cta{
         padding:1rem 4.5rem;
         position: relative;
         left:50%;
         transform: translateX(-50%);
         
     }
-}   
+   
+  
