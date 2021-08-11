@@ -214,15 +214,7 @@ header.sticky .navlinks li a:hover {
   font-size: 1.5em;
 }
 
-
 .title {
-
-
-.title {
-
-.menu .title {
-
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,9 +289,7 @@ header.sticky .navlinks li a:hover {
 }
 
 a.cta {
-
   margin-top: 30px;
-
   padding: 1rem 4.5rem;
   position: relative;
   left: 50%;
@@ -310,8 +300,6 @@ a.cta {
 .expert {
   margin-top: -3%;
 }
-
-
 
 .testimonial {
   margin-top: 5%;
@@ -340,11 +328,6 @@ a.cta {
   margin: 20px;
   padding: 40px;
   background: #fff;
-
-
-.expert .title {
-
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,7 +384,6 @@ a.cta {
   color: #fff;
 }
 
-
 .contact {
   background: url(../images/bg3.jpg);
   background-size: cover;
@@ -457,4 +439,27 @@ a.cta {
   cursor: pointer;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+footer p {
+  color: #333;
+}
+
+footer p a {
+  color: #ff0157;
+  font-weight: 600;
+  font-size: 1em;
+}
 /*# sourceMappingURL=style.css.map */
