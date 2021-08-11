@@ -1,3 +1,7 @@
+
+
+
+
 .title{
     display:flex;
     align-items: center;
@@ -5,6 +9,20 @@
     flex-direction: column;
     width:100%;
    
+
+
+
+.menu{
+    .title{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+       
+    }
+
+
 }
     .content{
         display:flex;
@@ -49,7 +67,9 @@
         
     }
     a.cta{
+
         margin-top:30px;
+
         padding:1rem 4.5rem;
         position: relative;
         left:50%;
