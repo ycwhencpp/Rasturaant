@@ -5,3 +5,22 @@ window.addEventListener("scroll",()=>{
     header.classList.toggle("sticky",window.scrollY > 0);
     
 });
+
+//for clearing contact form on submit
+
+const submitform =document.querySelector('input[type="submit"]');
+submitform.addEventListener("click",()=>{
+        document.querySelector("textarea").value=null;
+});
+
+//for making navlink active on click
+
+const navlink = document.querySelectorAll(".navlinks li a");
+
+function addclass(){
+    navlink.forEach(n=>n.classList.remove("active"));
+    this.classList.add("active");
+    }
+navlink.forEach(n=>n.addEventListener("click",addclass));
+ 
+
