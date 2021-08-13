@@ -476,7 +476,7 @@ footer p a {
   header nav .navlinks {
     display: none;
   }
-  header nav .navlinks.show {
+  header nav .navlinks.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,11 +497,11 @@ footer p a {
     left: 0;
     background: #fff;
   }
-  header nav .navlinks.show li {
+  header nav .navlinks.active li {
     margin-left: 0;
     padding-top: 20px;
   }
-  header nav .navlinks.show li a {
+  header nav .navlinks.active li a {
     font-size: 1.6em;
     font-weight: 300;
     color: #111;
@@ -527,6 +527,12 @@ footer p a {
   header.sticky .menu-toggle {
     -webkit-filter: invert(1);
             filter: invert(1);
+  }
+  header.sticky .navlinks.active {
+    height: calc(100% - 60px);
+    width: 100%;
+    position: fixed;
+    top: 60px;
   }
   section {
     padding: 20px;

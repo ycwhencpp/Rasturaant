@@ -6,7 +6,7 @@
         padding:10px 20px;
         .navlinks{
             display:none;
-            &.show{
+            &.active{
                 display:flex;
                 align-items: center;
                 justify-content: center;
@@ -59,7 +59,19 @@ header{
         .menu-toggle{
             filter:invert(1);
         }
+        //just a normal fix will look at this later
+        .navlinks{
+            &.active{
+
+                // calc not working
+                height: calc(100% - 60px);
+                width:100%;
+                position:fixed;
+                top:60px;
+            }
+                
     }
+}
 }
 section{
     padding:20px;
