@@ -24,14 +24,13 @@ function addclass(){
 navlink.forEach(n=>n.addEventListener("click",addclass));
 
 
- // for menutoggle
+// for menutoggle
 const menutoggle= document.querySelector(".menu-toggle");
 
-menutoggle.addEventListener("click",()=>{
-   menutoggle.classList.toggle("active");
+function togglemenu(){
+    menutoggle.classList.toggle("active");
 
-   document.querySelector(".navlinks").classList.toggle("show");
-    
-   
-});
-
+    document.querySelector(".navlinks").classList.toggle("active");
+}
+menutoggle.addEventListener("click",togglemenu);
+navlink.forEach(n=>n.addEventListener("click",togglemenu));
