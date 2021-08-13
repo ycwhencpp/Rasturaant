@@ -3,7 +3,7 @@
         width:100%;
     nav{
         width:100%;
-        padding:10px 30px;
+        padding:10px 20px;
         .navlinks{
             display:none;
             &.show{
@@ -11,29 +11,41 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                height:100%;
+                // calc not working
+                height: calc(100% - 80px);
                 width:100%;
                 position:fixed;
-                top:0;
+                top:80px;
                 left:0;
                 background:#fff;
+                li{
+                    margin-left: 0;
+                    padding-top:20px; 
+                    
+                    a{
+                        font-size:1.6em;
+                        font-weight:300;
+                        color:#111;
+                        
+                    }
+                }
             
             }
         }
         .menu-toggle{
             position: relative;
-            width:40px;
-            height:40px;
+            width:35px;
+            height:35px;
             background: url(../images/menu.png);
             background-position: center;
-            background-size: 35px;
+            background-size: 30px;
             background-repeat: no-repeat;
             cursor:pointer;
             transition:0.1s ease;
             &.active{
                 background:url(../images/close.png);
                 background-position: center;
-                background-size:28px;
+                background-size:25px;
                 background-repeat: no-repeat;
                 
             }
@@ -49,6 +61,85 @@ header{
         }
     }
 }
+section{
+    padding:20px;
+}
+.content-data{
+    h2{
+        font-size:3em;
+        color:#fff;
+    }
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    .col-50{
+        width:100%;
+        .title-text{
+            margin-bottom:10px;
+        }
+        .imgbx{
+            height:350px;
+            margin-top:30px;
+        }
+    }
+    .menu{
+        .title{
+            .title-text{
+                margin-bottom: 10px;
+            }
+            
+        }
+        .content{
+            margin-top: 20px;
+            .card{
+                margin:10px;
+                .imgbx{
+                    height:260px;
+                }
+            }
+        }
+    }
+}
+.title{
+    text-align: center;
+    .title-text{
+        font-size:2.2em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight:300;
+    }
+}
+.testimonial{
+    .content{
+        .card-expert{
+            margin:10px;
+            padding:20px;
+        }
+    }
+}
+.contact{
+
+    .contact-form{
+    padding:20px 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     
+    }
+ }
+ footer{
+     text-align: center;
+     margin-right:5px;
+ }
+}
+@media (max-width:480){
+    .home{
+
     
+    .content-data{
+        h2{
+            font-size:2.25em;
+        }
+    }
+}
 }
